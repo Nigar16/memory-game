@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  bisque;
+    text-align: center;
+    font-family: 'Lacquer', cursive;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+table
+{
+    margin-top:80px;
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+
+td
+{
+    width: 80px;
+    height: 80px;
+    border: solid 2px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    width:78px;
+    height:78px;
+}
+
+
+#time,#stars{
+    display: none;
+}
+
+
+
+#blink{
+    animation:blink 1s infinite;
+}
+    
+@keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: .5;}
+        100%{opacity: 1;}
+}
+
+h1{
+    padding-top: 10px;
+    color:red;
+    font: 800 50px  'Lacquer', cursive;
+}
+
+h3{
+    padding-top: 50px;
+    color:purple;
+    font: 800 35px  'Lacquer', cursive;
+}
+
+button{
+    margin-top:20px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+    font: 800 30px 'Lacquer', cursive;
+    color:white ;
+    background-color: green;
+}
+
+i{
+   color: yellow;
+}
